@@ -1,0 +1,28 @@
+<main class="main">
+  <div class="content">
+      <h1>Proyectos de ApiIvan</h1>
+      <div class="left-side">
+          <h2>Listado de Proyectos</h2>
+          <table class="proyectos-table">
+              <thead>
+                  <tr>
+                      <th>ID</th>
+                      <th>Nombre</th>
+                      <th>Fecha</th>
+                      <th>Descripción</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr *ngFor="let proyecto of proyectos">
+                      <td>{{ proyecto.id }}</td>
+                      <td>{{ proyecto.nombre }}</td>
+                      <td>{{ proyecto.fecha }}</td>
+                      <td>{{ proyecto.descripcion }}</td>
+                  </tr>
+              </tbody>
+          </table>
+          <p>¡Explora los proyectos emocionantes que hemos realizado en ApiIvan!</p>
+          <!-- También podrías agregar una imagen aquí -->
+      </div>
+  </div>
+</main>

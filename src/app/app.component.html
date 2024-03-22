@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio del Zamo</title>
+  <style>
+   
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    
+    .header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      border-bottom: 3px solid #ffd700;
+    }
+    
+    .logo {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+    
+    .navigation ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .navigation li {
+      margin: 0 15px;
+    }
+    
+    .navigation a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 20px;
+      transition: color 0.3s ease;
+      position: relative;
+    }
+    
+    .navigation a:hover {
+      color: #ffd700;
+    }
+    
+    .navigation a::before {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      width: 0;
+      height: 3px;
+      background-color: #ffd700;
+      transition: width 0.3s ease, left 0.3s ease;
+    }
+    
+    .navigation a:hover::before {
+      width: 100%;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Portafolio del Zamo</div>
+    <nav class="navigation">
+      <ul>
+        <li><a href="/home">Inicio</a></li>
+        <li><a href="/Proyectos">Proyectos</a></li>
+        <li><a href="/trabajos">ApiIvan</a></li>
+        <li><a href="/Apizamo">ApiZamo</a></li>
+        <li><a href="/Api">Api Internet</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+  <router-outlet/>
+</body>
+</html>

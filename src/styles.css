@@ -1,0 +1,127 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del encabezado */
+.header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navigation li {
+    margin-right: 20px;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
+/* Estilos generales para el contenido */
+.main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para el perfil */
+.profile-container {
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-info {
+    flex: 1;
+    text-align: left;
+    max-width: 400px;
+}
+
+.profile-info h2 {
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* Estilos para la tabla de proyectos */
+.proyectos-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 2px solid #3498db;
+}
+
+.proyectos-table th,
+.proyectos-table td {
+    padding: 10px;
+    border: 1px solid #3498db;
+    text-align: left;
+}
+
+.proyectos-table th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.proyectos-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.proyectos-table tbody tr:hover {
+    background-color: #ecf0f1;
+}
+
+/* Estilos responsivos */
+@media only screen and (max-width: 600px) {
+    .profile img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile {
+        flex-direction: column;
+    }
+}
+
+
