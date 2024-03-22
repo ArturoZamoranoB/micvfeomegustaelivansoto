@@ -8,7 +8,7 @@ import { ApiComponent } from './api/api/api.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  {path: '', component: Vista2Component},
   { path: 'trabajos', component: UchalamamaComponent },
   { path: 'home', component: Vista2Component },
   {path: 'Proyectos', component: ResumenpersonalComponent},
